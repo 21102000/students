@@ -10,7 +10,7 @@ public class CorsConfig implements WebMvcConfigurer{
         public void addCorsMappings(CorsRegistry registry) {
             registry.addMapping("/satApp/v1/**")
 //                    .allowedOrigins("https://school-app-ce780.web.app")
-                .allowedOrigins("http://localhost:3000")
+                .allowedOrigins("https://satboard-ae702.web.app")
                     .allowedHeaders("GET", "POST", "PUT", "DELETE")
                     .allowedHeaders("*");
         }
